@@ -1,0 +1,13 @@
+paths:
+  training_folder_path: <your_proj_folder_path>/Data/Training/
+  testing_folder_path: <your_proj_folder_path>/Data/Testing/
+  processed_folder_path: <your_proj_folder_path>/Data/Training/
+
+mode:
+  mode_selection: 1
+
+keys:
+  hPerfect_key: hestPerfectSymbolLevel
+  txGrid_key: txGridSymbolLevel
+  rxGrid_key: rxGridSymbolLevel
+  rxWaveform_key: rxWaveformSymbolLevel

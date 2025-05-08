@@ -1,0 +1,22 @@
+parameters:
+  num_BS_antennas: 64
+  num_UE_antennas: 2
+
+  num_RBs: 36
+  num_subcarrier_RB: 12
+
+  subcarrier_spacing_Hz: 120
+
+  num_frame_sample: 2
+  num_subframe_frame: 10
+  num_slot_subframe: 8
+
+  special_slot_period: 1
+  num_symbol_slot: 1
+  srs_start_symbol: 0
+  srs_end_symbol: 0
+
+  spatial_compresion_ratios: [1, 2, 4, 8]
+  frequency_compresion_ratios: [2, 4, 8, 16]
+  spatial_compresion_ratio: 4
+  frequency_compresion_ratio: 4

@@ -1,0 +1,23 @@
+training:
+  batch_size: 16
+  num_epochs: 400
+  
+  random_seed: 9048
+  num_workers: 8
+
+  model: 'Teacher'
+
+  train_loss: 'NMSE'
+  val_loss: 'NMSE'
+  optimizer: 'Adam'
+
+  scheduler: 'LambdaLR'
+  learning_rate: 0.0002
+  lr_step_size: 20
+  lr_gamma: 0.5
+  
+  device: 'cuda'
+
+  early_stopping_patience: 20
+
+  data_augmentation: False
