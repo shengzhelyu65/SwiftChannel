@@ -78,4 +78,4 @@ The hardware implementation targets the AMD ZYNQ RFSoC XCZU49DR on the Avnet ADR
 ## License
 
 Copyright © 2025 [Shengzhe Lyu](https://github.com/shengzhelyu65).<br />
-This project is [MIT](https://github.com/shengzhelyu65/SwiftChannel/LICENSE) licensed.
+This project is [MIT](https://github.com/shengzhelyu65/SwiftChannel/blob/main/LICENSE.txt) licensed.
