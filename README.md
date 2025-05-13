@@ -71,7 +71,7 @@ Hardware
 The hardware implementation targets the AMD ZYNQ RFSoC XCZU49DR on the Avnet ADRS1000 board. The development environment is based on Vitis Unified IDE 2024.1, Vivado 2024.1, and Vitis Classic 2024.1.
 
 **Usage:**
-1. **Vitis_HLS**: This folder contains the HLS implementation of both the least squres (LS) estimator and SwiftChannel algorithm. The HLS code is written in C++ and can be synthesized into hardware IP using Vitis HLS.
+1. **Vitis_HLS**: This folder contains the HLS implementation of both the least squres (LS) estimator and SwiftChannel algorithm. The HLS code is written in C++/C and can be synthesized into hardware IP using Vitis HLS.
 2. **Vivado**: This folder contains the block design created using Vivado to connect the HLS IP with other components in the Zynq RFSoC. The preset tcl file for the Arm PS is also included in this folder.
 3. **Vitis**: This folder contains the Vitis application host code to test SwiftChannel.
 
