@@ -4,6 +4,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
 [![Platform](https://img.shields.io/badge/platform-FPGA-orange)](#)
+[![stars](https://img.shields.io/github/stars/shengzhelyu65/SwiftChannel.svg?style=flat-square)](https://github.com/shengzhelyu65/SwiftChannel/stargazers)
+![GitHub repo size](https://img.shields.io/github/repo-size/shengzhelyu65/SwiftChannel.svg?style=flat-square)
 
 ## Requirements
 - [MATLAB R2024b](https://www.mathworks.com/products/matlab.html)
