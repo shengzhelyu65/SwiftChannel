@@ -1,6 +1,7 @@
 # SwiftChannel
 
 <p align="center"> <em><b>A Novel Algorithm-Hardware Co-design for 5G MIMO Channel Estimation</b></em> <p>
+<p align="center"> <em><b>(5G MIMO System Simulation + Deep Learning Algorithm + FPGA-Based Hardware Implementation)</b></em> <p>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
 [![Platform](https://img.shields.io/badge/platform-FPGA-orange)](#)
