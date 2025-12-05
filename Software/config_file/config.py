@@ -72,3 +72,31 @@ class ModelConfig:
         self.device = config['training']['device']
         self.early_stopping_patience = config['training']['early_stopping_patience']
         self.data_augmentation = config['training']['data_augmentation']
+
+class BaselineConfig:
+    def __init__(self, model_name):
+        config_file = 'Baselines/baseline_config.yaml'
+        config = get_config(config_file)
+        
+        # Get model-specific config, fallback to default if not found
+        if model_name in config.get('models', {}):
+            model_config = config['models'][model_name]
+        else:
+            print(f"Warning: Model '{model_name}' not found in baseline_config.yaml, using default configuration.")
+            model_config = config.get('default', {})
+        
+        self.model = model_name
+        self.batch_size = model_config.get('batch_size', 16)
+        self.num_epochs = model_config.get('num_epochs', 400)
+        self.learning_rate = model_config.get('learning_rate', 0.0002)
+        self.lr_step_size = model_config.get('lr_step_size', 20)
+        self.lr_gamma = model_config.get('lr_gamma', 0.5)
+        self.random_seed = model_config.get('random_seed', 9048)
+        self.num_workers = model_config.get('num_workers', 8)
+        self.train_loss = model_config.get('train_loss', 'NMSE')
+        self.val_loss = model_config.get('val_loss', 'NMSE')
+        self.optimizer = model_config.get('optimizer', 'Adam')
+        self.scheduler = model_config.get('scheduler', 'LambdaLR')
+        self.device = model_config.get('device', 'cuda')
+        self.early_stopping_patience = model_config.get('early_stopping_patience', 20)
+        self.data_augmentation = model_config.get('data_augmentation', False)

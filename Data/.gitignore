@@ -1,2 +1,6 @@
 Training
 Testing
+
+*.mat
+*.h5
+*.npy
